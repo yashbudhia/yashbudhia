@@ -178,6 +178,14 @@ Not public, but the bulk of what I have been building. Happy to walk through any
 <img height="190" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=yashbudhia&theme=transparent" alt="Most-committed languages" />
 <img height="190" src="https://streak-stats.demolab.com/?user=yashbudhia&theme=transparent&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="Contribution streak" />
 
+<br><br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yashbudhia/yashbudhia/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yashbudhia/yashbudhia/output/github-snake.svg" />
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/yashbudhia/yashbudhia/output/github-snake.svg" width="96%" />
+</picture>
+
 </div>
 
 ---
