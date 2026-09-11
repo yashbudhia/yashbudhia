@@ -165,17 +165,9 @@ These are not public, but they are most of what I have been building. Happy to w
 
 ---
 
-## GitHub
+## Contributions
 
 <div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=yashbudhia&theme=transparent" alt="Profile summary" width="96%" />
-
-<img height="190" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yashbudhia&theme=transparent" alt="Commit stats" />
-<img height="190" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=yashbudhia&theme=transparent" alt="Most committed languages" />
-<img height="190" src="https://streak-stats.demolab.com/?user=yashbudhia&theme=transparent&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="Contribution streak" />
-
-<br><br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yashbudhia/yashbudhia/output/github-snake-dark.svg" />
