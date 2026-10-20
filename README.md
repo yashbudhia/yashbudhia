@@ -14,13 +14,11 @@
 
 ## About
 
-I build agents that have to keep running when nobody is watching. Always on, on real devices, with real user data behind them.
+I build AI agents and the infrastructure behind them.
 
-- Building [Macy](https://heymacy.ai), an always on personal assistant. A Wear OS app in Kotlin does wake word detection and vitals on device. A Node/TypeScript server runs the agent itself: streaming voice, long term memory, a few hundred tool integrations. iMessage is the front end.
-- The part of agent work I care about most is the boring part. Evals, MCP tooling, guardrails. Proving the agent picked the right tool, not just that it produced text.
-- On numerical work I verify first and optimise after. moldcool checks every result against a series solution, a manufactured solution and an eigenvalue before it is allowed to report a speedup.
-- Open source: 5 open PRs upstream (python-stdnum, Razorpay Python and Node, ibantools) and 2 merged into DiceDB.
-- A lot of my recent work sits in private and client repos. What is below is the part I can show.
+Currently building [Dreamtune](https://dreamtunelabs.com): model APIs, tools and GPU compute through one workspace key, with an SDK, CLI and MCP server.
+
+I focus on reliable tool use, evals and guardrails. My work spans TypeScript backends and C++/CUDA, with merged contributions to DiceDB.
 
 ---
 
@@ -114,11 +112,6 @@ An image signal processing pipeline written end to end: demosaic, white balance,
 
 | PR | Repository | What it does | Status |
 |---|---|---|---|
-| [#511](https://github.com/arthurdejong/python-stdnum/pull/511) | `arthurdejong/python-stdnum` | Add IFSC (Indian Financial System Code) bank branch validation | Open |
-| [#341](https://github.com/razorpay/razorpay-python/pull/341) | `razorpay/razorpay-python` | `close()` and context manager support on the client | Open |
-| [#342](https://github.com/razorpay/razorpay-python/pull/342) | `razorpay/razorpay-python` | Fix `UnboundLocalError` when package metadata is missing | Open |
-| [#489](https://github.com/razorpay/razorpay-node/pull/489) | `razorpay/razorpay-node` | Support `expand[]` in `orders.fetch`, encoded the way the API expects | Open |
-| [#692](https://github.com/Simplify/ibantools/pull/692) | `Simplify/ibantools` | Fix account number extraction for IE, PT, ME, MU and SC | Open |
 | [#23](https://github.com/dicedb/playground-mono/pull/23) | `dicedb/playground-mono` | Blacklist unsafe commands in the playground | Merged |
 | [#19](https://github.com/dicedb/alloy/pull/19) | `dicedb/alloy` | Same blacklist enforced at the engine boundary | Merged |
 
@@ -133,7 +126,7 @@ These are not public, but they are most of what I have been building. Happy to w
 
 | Project | What it is | Stack |
 |---|---|---|
-| **Macy** ([heymacy.ai](https://heymacy.ai)) | Always on personal assistant. Wake word and vitals run on a Wear OS watch, voice streams through a cloud agent with long term memory and a few hundred tool integrations, iMessage is the front end | Kotlin, Wear OS, Node/TS, MongoDB Atlas, Cloudflare |
+| **Dreamtune** ([dreamtunelabs.com](https://dreamtunelabs.com)) | Model APIs, tool integrations, GPU compute and request traces through a workspace key, SDK, CLI and MCP server | TypeScript, Node.js, Next.js, MongoDB, Cloudflare, Fly.io |
 | **InterviewCracker** | Desktop interview copilot. Screen and audio capture feed a live reasoning loop, with a stealth window mode | Electron, Node/TS, Fly.io, Claude |
 | **whydunit** | Battery forensics agent for Android. Investigates power drain from batterystats and bugreports and cites its evidence, with a reproducible seeded eval | Python, agent tooling |
 | **job-agent** | Autonomous job hunt agent. Sources roles, finds and verifies contact emails through a tool marketplace, drafts and sends outreach under a send budget | TypeScript, Claude, tool APIs |
